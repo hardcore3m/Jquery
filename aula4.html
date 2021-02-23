@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lógica de Desenvolvimento em Jquery</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           
+            $('h2').css('margin','0');
+            $('p').css({margin:'0', color:'blue'});
+            $('.div1').css({'margin-bottom':'20px', 'background':'#ccc'});
+
+            // Filhas
+            $('.div1 span').hide().delay('1000').fadeIn(1000).css({'color':'green','font-size':'15pt'});
+            $('.div1 h2').hide().delay('1000').fadeIn(1000).css({'color':'red','font-size':'50pt'});
+        });
+            
+    </script>    
+</head>
+<body>
+<div class="div1">
+    <h2>H2 filho de DIV 1</h2>
+    <P>P filho de DIV 1 <span>SPAN filho de P</span></P>
+    <span>SPAN filho de DIV 1</span>
+</div>
+<h2>H2 for da DIV 1</h2>
+<p class="p1">P1 fora de DIV 1</p>
+<p>P2 foda de DIV 1</p>
+<p>P3 foda de DIV 1</p>
+</body>
+</html>
